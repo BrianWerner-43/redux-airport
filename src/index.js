@@ -16,10 +16,11 @@ const airlines = (state =[], action) => {
     return state;
 }
 
+
 /** TODO: Create store */
 const planes = createStore(
     combineReducers({
-      airlines
+      airlines,
     })
   )
 

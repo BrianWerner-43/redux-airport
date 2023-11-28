@@ -13,8 +13,13 @@ const ourAirlines = useSelector((store) => store.airlines)
                 </th>
             </tr>
             {ourAirlines.map((index) => {
-            return <tr><td>{index}</td></tr>
-          })}</table>
+            return (
+            <tr>
+                 <td>{index.planeInput}</td>
+                <td>{index.planeCount}</td>
+            </tr>)
+            })}
+        </table>
     )
 
 }
